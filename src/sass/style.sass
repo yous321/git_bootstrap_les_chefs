@@ -1,8 +1,11 @@
+@import '../../src/sass/_mes-variables-personalisé.sass'
 @import '../../node_modules/bootstrap/scss/bootstrap.scss'
 @import url(https://fonts.googleapis.com/css?family=Courgette)
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 
 
+.police
+    font-family: 'Courgette', cursive
 nav
     background: url("../../images/banner1.jpg")
     background-size: cover
@@ -23,17 +26,17 @@ nav
 .mon-espace
     padding : .9rem 0
     font-size: .9rem
-h1 
+.mon-text-nav
     margin-top: 8rem
     font-size: 50px
     font-family: 'Courgette', cursive
     .majuscule
         text-transform: uppercase
-    .couleur-taste
-        color:#d8374d !important
-    .gras
-        text-transform: bold
-        font-size: 70px
+.couleur-taste
+    color:#d8374d !important
+.gras
+    text-transform: bold
+    font-size: 70px
 .div-button
     margin-top: 3rem
 
@@ -41,20 +44,229 @@ h1
         background-color: white !important
         color: black !important
         font-weight: 300
-        font-size: 20px
+        font-size: 15px
     
     #btn-right
         background-color: #d8374d !important
         color: white !important
         font-weight: 300
-        font-size: 20px
+        font-size: 15px
 .bottom-nav
     margin-top: 13rem
     teint-cercle2
         color: gray 
-        /*fin 1ere section*/
+/*fin 1ere section*/
+/*debut section1*/
+
+.parti-1
+    background-image: url("../../images/main_bg.jpg") 
+    height: 1400px
+    padding-top: 40px
+    .fond
+        background-color: white
+    .couleur-titre 
+        color:#d8374d !important   
+.story
+    font-size: 40px 
+.our
+    font-size: 60px 
+.img-fond
+    background: url("../../images/decoration_line.png") no-repeat bottom
+.texte-titre
+    padding-left: 300px
+    padding-right: 300px
+.menu
+    
+    text-align: center
+    border-right: 1px solid gray
+    border-bottom: 1px solid black 
+    background-color: white !important
+    color: #dee0e2 !important
+    
+    border-radius: 0 !important
+    &:hover
+        color: red !important
+        border-right: red solid 5px !important
+        color:  red !important
+     
+.couleurs
+    color: black 
+    font-size: 25px
+.img-ronde
+    width: 110px
+    border: 3px solid #dee0e2 
+.taille-prix
+    font-size: 25px
+    font-weight: 200
+    background-color: #dee0e2 !important
+.bord
+    border-bottom: 1px black dotted
+.automatique
+    display: block
+    margin-left: auto
+    margin-right: auto 
+    padding-top: 70px
+
+/*fin-parti-1*/
+.parti-2
+    background-image: url('../../images/team_background.jpg')
+    background-size: cover
+    
+    height: 700px
+
+#formulaire
+    margin: 9.5vh 10.5vh
+    background-color: red
+    height: 75vh
+    border-radius: 15px
+    background-image: url('../../images/book_table_bg.jpg')
+    padding: 8vh 10.5vh
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+
+#formulaire h1
+    color: white
+    font-size: 16px
+    width: 100%
+    text-align: center
+    margin-bottom: 7.5vh
+
+.span-8
+    font-size: 23px
+            
+.input
+    height: 35vh
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: space-between
+
+input 
+    width: 47%
+    height: 6.5vh
+    border-radius: 15px
+    border: none
+    font-size: 16px
+    padding-left: 2vh
+
+#button-3
+    background-color: #B5002F
+    margin-top: 6vh
+    font-size: 13px
+    color: #E5E5E5
+    border-radius: 25px
+    border: solid 1px #B5002F
+    padding: 15px 25px
+    width: 20vh
+
+// FORMULAIRE 2
+.img-1
+    background-image: url('../../images/blog_img1.jpg')
+    border: solid 4px #E4E4E4
+    border-radius: 20px
+    background-size: 110%
+    background-position-x: 100%
+    background-position-y: 100%
+    width: 100%
+    height: 240px
+
+.img-2
+    background-image: url('../../images/blog_img2.jpg')
+    border: solid 4px #E4E4E4
+    border-radius: 20px
+    background-size: 110%
+    background-position-x: 100%
+    background-position-y: 100%
+    width: 100%
+    height: 240px
+
+.paragraphespecial
+    border-radius: 20px
+    width: 90%
+    align-content: center
+    position: relative
+    margin-right: auto
+    margin-left: auto
+
+.paragraphe2
+    font-size: 1.5rem
+    margin-top: -20px
+    text-align: center
+
+.paragraphe2 span
+    font-size: 2.3rem
+
+.buttonspec a
+    border-radius: 25px
 
 
+// TESTIMONIALS
+.testimonials
+    overflow: hidden
+    background-image: url('../../images/testimonials_background.jpg')
+    background-size: 100%
+
+.imgtestim
+    border: solid 4px #E0DFDF
+    border-radius: 50%
+    width: 100%
+    height: 13vh
+
+.bordertestim
+    border: 1px solid #e0dfdf
+    border-radius: 1.5rem
+
+// CONTACT
+
+.containerperso
+    max-width: 550px
+    width: 100%
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+      
+.bordureperso
+    border-radius: 30px
+
+.bordureperso .border-bottom
+    margin-left: 2rem
+    margin-right: 2rem
+
+.sectionfooter
+    height: 33vh
+    background-image: url('../../images/footer_background.jpg')
+    background-size: 100%
+
+.footerbordure
+    background-color: #282828
+    background-image: url('../../images/footer_bottom_decoration_img.png')
+    background-repeat: repeat
+    height: 10px
+    width: 100%
+    
+
+.photos
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: 20vh
+
+    [alt="photo-1"]
+        width: 23%
+
+    [alt="photo-2"]
+        width: 23%
+
+.buttonsfooter a
+    border-radius: 20px
+    border: 1px solid white
+    font-size: 15px
 
     
 
